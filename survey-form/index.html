@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+  <html>
+    <main>
+      <head>
+        <title>Coder Cafe Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta lang="en">
+        <meta charset="utf-8">
+      </head>
+      <body>
+        <div class="header">
+          <h1 id="title">Coder Cafe Survey Form</h1>
+          <p id="description" class="center"><em>All Web Devs!</em> Please complete the following form to help Coder Cafe better serve you:</p>
+        </div>
+        <!-- Labels and Inputs for survey form-->
+          <form id="survey-form">
+            <fieldset>
+              <h2>Developer Questions</h2>
+              <label id="name-label">Name</label>
+              <input type="text" id="name" placeholder="Enter Your Name" required>
+              <label id="email-label">Email</label>
+              <input type="email" id="email" placeholder="Enter Your Email" required>
+              <label id="number-label">Years web developing</label>
+              <input id="number" type="number" min="0" max="100" placeholder="Years" class="extra-padding">
+            
+              <p>Which best describes your current web development role?</p>
+              <select id="dropdown">
+                <option>(select one)</option>
+                <option>Student Developer</option>
+                <option>Development Teacher</option>
+                <option>Full Time Web Developer</option>
+                <option>Seeking/Part Time Web Developer</option>
+              </select>
+
+              <p>How would you describe your code?</p>
+              <select id="dropdown">
+                <option>(select one)</option>
+                <option>Sloppy</option>
+                <option>Needs work</option>
+                <option>Still learning</option>
+                <option>Very good</option>
+                <option>Perfect</option>
+              </select>
+            </fieldset>
+
+             <fieldset>
+                <h2>Coffee Questions</h2>
+                <p>What is the most important aspect of coffee to you?</p>
+                <label class="inline">
+                  <input type="radio" name="favorite-part" value="type-of-bean" />
+                  The type of coffee bean used
+                </label>
+                <label class="inline">
+                  <input type="radio" name="favorite-part" value="amount-of-creamer" />
+                  The amount of creamer used
+                </label>
+                <label class="inline">
+                  <input type="radio" name="favorite-part" value="coffee-temperature" />
+                  The temperature of the coffee
+                </label>
+
+                <p>What is your ideal cup of coffee like? (check all that apply):</p>
+                <label class="inline">
+                 <input type="checkbox" value="dark-roast" />
+                 Dark Roast
+                 </label>
+                 <label class="inline">
+                 <input type="checkbox" value="medium-roast" />
+                 Medium Roast
+                 </label>
+                 <label class="inline">
+                 <input type="checkbox" value="light-roast" />
+                 Light Roast
+                 </label>
+                 <label class="inline">
+                 <input type="checkbox" value="ice" />
+                 Ice
+                 </label>
+                 <label class="inline">
+                 <input type="checkbox" value="no-ice" />
+                 No Ice
+                 </label>
+                 <label class="inline">
+                 <input type="checkbox" value="creamer" />
+                 Creamer
+                 </label>
+                 <label class="inline">
+                 <input type="checkbox" value="no-creamer" />
+                 No Creamer
+                 </label>
+                 <label class="inline">
+                 <input type="checkbox" value="mug" />
+                 Mug
+                 </label>
+                 <label class="inline">
+                 <input type="checkbox" value="cup" />
+                 Cup
+                 </label>
+                 <p>Is there anything else we should know about how you like your coffee? Please tell us below!</p>
+                 <textarea rows="3" cols="30" placeholder="I love whipped cream on top..."></textarea>
+                </fieldset>
+                <button id="submit">Submit</button>
+
+        </form>
+      </body>
+      <footer>
+        <p>
+          No Copyright - <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a>
+        </p>
+      </footer>
+    </main> 
+  </html>
