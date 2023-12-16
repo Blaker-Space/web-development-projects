@@ -55,3 +55,8 @@ body, footer{
     font-size: 14px;
     margin: 25px auto;
   }
+  button{
+    background-color:rgb(194, 128, 6);
+    color:black;
+    border-color: black;
+}

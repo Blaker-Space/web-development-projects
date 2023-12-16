@@ -65,3 +65,8 @@ main{
   a:hover{
     color: #FFFFFF;
   }
+  button{
+    background-color:rgba(17, 38, 59, 0.432);
+    color:rgb(200,200,200);
+    border-color: black;
+}
