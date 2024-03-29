@@ -1,0 +1,67 @@
+html {
+    background-color: #494D5F;
+    color: #E5EAF5;
+    font-family: monospace;
+}
+
+/* Styles for the Table of Contents Button */
+.menubtn,
+.table-o-contents {
+    all: unset;
+    text-align: center;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #191D2F;
+    color: #C5CAD5;
+    cursor: pointer;
+}
+
+.menubtn:hover {
+    background-color: #04081A;
+    color: #E5EAF5;
+}
+
+.menubtn:focus+.table-o-contents {
+    display: block
+}
+
+/* Styles for Table of Contents */
+.toc-title {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.nav-link {
+    all: unset;
+}
+
+.toc-titles:hover {
+    background-color: #04081A;
+    color: #E5EAF5;
+}
+
+/* Media Queries to make the Table of Contents Button disappear
+     and regular Table of contents appear once width is greater than 500px. */
+@media(width <=500px) {
+
+    .menubtn {
+        display: block;
+    }
+
+    .table-o-contents {
+        display: none;
+        margin-top: -4px;
+    }
+}
+
+@media(width > 500px) {
+    .menubtn {
+        display: none;
+    }
+
+    .table-o-contents {
+        display: block;
+    }
+}
